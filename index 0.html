@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #0</title>
+    <style>
+      
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Rubik:wght@300&display=swap');
+        .div-container{display: flex;flex-direction: column;width: 100%;}
+        .div-1{display: flex;flex-direction: row;width: 100%;}
+        .div-2{display: flex;flex-direction: row;width: 100%; }
+        .div-3{display: flex;flex-direction: row;width: 100%;}
+        .div-4{display: flex;flex-direction: row;width: 100%;}
+        .div-5{display: flex;flex-direction: row;width: 100%;}
+        .div-6{display: flex;flex-direction: row;width: 100%;}
+        .div-7{background-image:url(4.jpg);background-repeat: no-repeat;background-size: 100% 100%;margin-top: -53px;}
+        .item-1{background-image: url(2.jpg);width: 60%;background-repeat: no-repeat;background-size: 100% 100%;}
+        .item-2{background-image: url(3.jpg);width: 40%;background-repeat: no-repeat;background-size: 100% 100%;}
+        .item-3{background-color: #065471;width: 100%;color: #fac213;}
+        .item-4{background-color: #065471;width: 100%;height: 70px;}
+        .h1-1{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 66px;margin-left: 153.5px;margin-top: 70px;font-weight: bolder;}
+        .span-1{color: #fac213;font-family: 'dancing script',cursive ;}
+        .p-1{color: #fac213;font-size: xx-large;margin:0px 0px 15px 30px ;}
+        .pic-1{width: 100%;height: 628px;clip-path: ellipse( 50%  50% at 50% 50%) ;}
+        .pic-2{width: 100%;clip-path: ellipse( 50%  50% at 50% 50%) ;}
+        .p-2{color: #0a91ab;font-family:'rubik',sans-serif ;font-weight: bold ;font-size: 40px;margin-left: 190px;}
+        .p-3{color: #fac213;font-size: 32px;font-family:'rubik',sans-serif  ;font-weight: bold ;margin-left: 153.5px;margin-top:330px;}
+        .pic-3{width: 300px;height: 200px;}
+        .h2-1{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 100px;margin-top: 50px;font-weight: bold ;}
+        .h2-2{color: #fac213;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 140px;margin-top: 10px;font-weight: bold ;}
+        .p-4{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 32px;margin-left: 140px;margin-top: 10px;font-weight: bold ;}
+        .p-5{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 32px;margin-left: 115px;margin-top:-60px;font-weight: bold ;}
+        .h2-3{color: #fac213;font-family: 'dancing script',cursive ;font-size: 50px;margin-top: -40px;text-align: center;}
+        .p-6{color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;font-weight: bold ;margin-left: 150px;}
+        .sup-0{text-align: center;padding-top: 10px;margin-bottom: 10px;}
+        #icon-1{color: #fac213;width: 30px;height: 30px;margin: 5px;}
+        a :hover{color: #0a91ab;}
+        .h2-4{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 165px;margin-top: 50px;font-weight: bold ;}
+        .h2-5{color: #fac213;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 100px;margin-top: 10px;font-weight: bold ;}
+        .p-7{color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;font-weight: bold ;margin-left: 150px;margin-top: 50px;}
+        .h2-6{color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;font-weight: bold ;margin-left: 10px;}
+        .p-8{font-family: 'rubik',sans-serif;font-size: 23px;font-weight: bolder ;margin-left: 10px;color: #13bee0;}
+        #icon-2{width: 90px;height: 90px;color: #fac213;}
+        .sup-1{display: grid;grid-template-columns: .3fr .7fr;width: 60%;margin: 10px 0px 0px 200px}
+        .h2-7{color: #fac213;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 140px;margin-top: 10px;font-weight: bold ;}
+        .h2-8{color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;margin-left: 210px;margin-top: 40px;font-weight: bold ;}
+        .p-9{color: #13bee0;font-family: 'rubik',sans-serif;font-size: 32px;margin-left: 210px;margin-top: 40px;font-weight: bold ;}
+        .range-0{accent-color: #fac213;background-color: #13bee0;width: 50%; }
+        .sup-2{width: 50%;margin-left: 210px;}
+        .p-10{color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;font-weight: bold ;margin-left: 150px;margin-top: 150px;}
+        .card{position: relative;max-width: 320px; height: 300px;margin: 30px 10px;padding: 20px 8px;display: flex;flex-direction:column ;transition: 0.3s ease-in-out;color: #0a91ab;}
+        .card:hover{height: 300px;}
+        .imgBx{position: relative;width: 300px;height:  250px;}
+        .item-5{background-image: url(2.jpg);width: 60%;background-repeat: no-repeat;background-size: 100% 100%;display: flex;flex-direction: row;}
+        .content{
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            color: #0a91ab;
+        
+        }
+        .h2-9{color: #0a91ab;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 510px;margin-top: 50px;font-weight: bold ;}
+        .h2-10{color: #fac213;font-family: 'rubik',sans-serif;font-size: 50px;margin-left: 460px;margin-top: 10px;font-weight: bold ;}
+        .sup-3{text-align: center;}
+        .input-1{width: 50%;height: 50px;margin-top: 20px;opacity: .5;}
+        .input-2{width: 50%;height: 50px;margin-top: 20px;opacity: .5;}
+        .input-3{width: 50%;height: 50px;margin-top: 20px;opacity: .5;}
+        .input-4{width: 50%;height: 150px;margin-top: 20px;opacity: .5;}
+        .button-1{border:1px solid #13bee0;color: #0a91ab;opacity: .5;width: 150px;height: 50px;background-color: black;border-radius: 25px;font-size: 17px;font-family: 'rubik',sans-serif;font-weight: bold ;margin-top: 20px;margin-bottom: 50px;}
+        .p-11{margin-top:700px;color: #fac213;font-family: 'rubik',sans-serif;font-size: 32px;font-weight: bold ;}
+        .div-footer{display: grid;grid-template-columns: .5fr 1fr .5fr;background-color: #065471;}
+        .span-2{color: #fac213;font-family: 'dancing script',cursive ;font-size: 66px;margin-left: 50px;}
+        .sup-4{display: flex;flex-direction: column;}
+        .pic-4{width: 150px;height: 150px;margin-left:50px ;}
+        .h2-11{color: #13bee0;font-family: 'rubik',sans-serif;font-size: 32px;margin-top:50px;font-weight: bold ;}
+        .p-12{color: #13bee0;font-family: 'rubik',sans-serif;font-size: 23px;;margin-top: 10px;font-weight: bold ;}
+        .nav-1{display: grid;grid-template-columns: 1fr 1.5fr;background-color: #065471;width: 42.28%;margin-left: 780px;}
+        .sup-5{display: flex;flex-direction: row;}
+        .pic-5{width: 110px;height: 110px;margin-left:30px ;}
+        li{display: inline;}
+        #a-1{color: #fac213;font-size: 23px;font-family: 'rubik',sans-serif;font-weight: bold ;margin: 20px 5px 0px 5px}
+        .sup-6{padding-top: 20px;}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="nav-1">
+        <div class="sup-6"><img src="1.png" alt="" class="pic-5"></div>
+        <div class="sup-5">
+            <ul>
+                <li><a href="#" id="a-1">WELCOME</a></li>
+                <li><a href="#" id="a-1">ABOUT</a></li>
+                <li><a href="#" id="a-1">SERVICES</a></li>
+                <li><a href="#" id="a-1">PROJECT</a></li>
+                <li><a href="#" id="a-1">CONTACT</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <div class="container">
+        <div class="div-1">
+            <div class="item-1">
+                <h1 class="h1-1"><em>Hi,</em>  my name is <span class="span-1">Omar</span></h1>
+                <p class="p-2"><em> Professional Web Developer</em></p>
+                
+                <p class="p-3">About Me</p>
+            </div>
+            <div class="item-2">
+                <div class="item-4">
+                    <p class="p-1">Me...</p></div>
+                    <img src="8.png" alt="" class="pic-2">
+                
+            </div>
+        </div>
+        <div class="div-2">
+            <div class="item-2">
+                <img src="9.jpg" alt="" class="pic-2">
+            </div>
+            <div class="item-1">
+                <h2 class="h2-1">About </h2>
+                <h2 class="h2-2">Me</h2>
+                <p class="p-4">Hello : I'm Omar Al-Shafee ,<br>Professional Web Developer</p>
+                <p class="p-5">I'm a web developer specialised in <br>
+                        frontend and Backend development <br>
+                        for complex scalable web apps. <br>
+                        Want to know how I may help your <br>
+                        project? Check out my project <br>
+                        portfolio and online resume.</p>
+                <h2 class="h2-3">Omar Al-Shafee</h2>
+                <div class="sup-0">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16" id="icon-1">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg></a>
+                </div>
+                <p class="p-6">Serveices</p>
+            </div>
+        </div>
+        <div class="div-3">
+            <div class="item-1">
+                <h2 class="h2-4">My </h2>
+                <h2 class="h2-5">Services</h2>
+                <div class="sup-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16" id="icon-2">
+                            <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="h2-6">Web Development</h2>
+                        <p class="p-8">Treinee at Orange</p>
+                    </div>
+                </div>
+                <div class="sup-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16" id="icon-2">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="h2-6">UX /UI Design</h2>
+                        <p class="p-8">Improve Website <br> Usability</p>
+                    </div>
+                </div>
+                <div class="sup-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16" id="icon-2" >
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="h2-6">Photography</h2>
+                        <p class="p-8">Good Photographer & <br>Photo Editor</p>
+                    </div>
+                </div>
+                
+
+                <p class="p-7">Skills</p>
+                
+            </div>
+            <div class="item-2">
+                <img src="8.png" alt="" class="pic-2">
+            </div>
+        </div>
+        <div class="div-4">
+            <div class="item-2">
+                <img src="9.jpg" alt="" class="pic-2">
+            </div>
+            <div class="item-1">
+                <h2 class="h2-4">My </h2>
+                <h2 class="h2-7">Skills</h2>
+                <h2 class="h2-8">What You Need To Know</h2>
+                <p class="p-9">HTML & CSS</p>
+                <div class="sup-2">
+                    <input type="range" class="range-0">
+                </div>
+                <p class="p-9">PHOTOSHOP</p>
+                <div class="sup-2">
+                    <input type="range" class="range-0">
+                </div>
+                <p class="p-9">MOCKUP&WIERFRAME</p>
+                <div class="sup-2">
+                    <input type="range" class="range-0">
+                </div>
+                <p class="p-10">Project</p>
+            </div>
+        </div>
+        <div class="div-5">
+            <div class="item-5">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="5.png" alt="" class="pic-3">
+                    </div>
+                    <div class="content">
+                        <h3>Card One</h3>
+                        <p>my project 1</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="7.png" alt="" class="pic-3">
+                    </div>
+                    <div class="content">
+                        <h3>Card tow</h3>
+                        <p>my project 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <img src="8.png" alt="" class="pic-2">
+            </div>
+        </div>
+        <div class="div-6">
+            <div class="item-2">
+                <img src="9.jpg" alt="" class="pic-2">
+            </div>
+            <div class="item-5">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="6.png" alt="" class="pic-3">
+                    </div>
+                    <div class="content">
+                        <h3>Card three</h3>
+                        <p>my project 3</p>
+                    </div>
+                </div>
+                <p class="p-11">Contact</p>
+            </div>
+        </div>
+        <div class="div-7">
+            <h2 class="h2-9">My </h2>
+                <h2 class="h2-10">Contact</h2>
+                <div class="sup-3">
+                    <input type="text" value="" class="input-1"><br>
+                    <input type="email" class="input-2"><br>
+                    <input type="text" class="input-3"><br>
+                    <input type="text area" class="input-4"><br>
+                    <button class="button-1">Send Message</button>
+                </div>
+        </div>
+        <div class="div-footer">
+            <div class="sup-4">
+                <div><h2 class="span-2">Omar</h2></div>
+                <div><img src="1.png" alt="" class="pic-4"></div>
+            </div>
+            <div>
+                <h2 class="h2-11">Contact</h2>
+                <p class="p-12">Address:Amman Jordan</p>
+                <p class="p-12">Email: <a href="#"> Omar.s.Al-shafee@gmail.com</a></p>
+                <p class="p-12">Phone:-962777683610</p>
+            </div>
+            <div>
+                <h2 class="h2-11">Get in touch</h2>
+                <div>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" id="icon-1">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
